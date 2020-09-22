@@ -568,6 +568,18 @@ section.work .card-wrapper{
 }
  }
 
+ @media only screen and (max-width: 650px) { 
+     .about .left .about-me-img{
+    height: 264px;
+    width: 212px;
+}
+
+.hero .left img{
+    height: 360px;
+}}
+
+ 
+
  @media (max-width:576px){
 
     .hero{
@@ -583,7 +595,7 @@ section.work .card-wrapper{
       .hero .right{
           position: absolute;
           top: 292px;
-          padding: 0 1rem;
+          padding: 0 1.2rem;
           background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.9));
 
       }

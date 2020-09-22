@@ -10,6 +10,7 @@ $(document).ready(function(){
     let hamberger=document.querySelector('.hamberger');
     let times=document.querySelector('.times');
     let mobilenav=document.querySelector('.mobile-nav');
+    let li=document.querySelector('.li');
     hamberger.addEventListener('click',function(){
       mobilenav.classList.add('open');
 
@@ -19,6 +20,10 @@ $(document).ready(function(){
       
       mobilenav.classList.remove('open');
     });
+    $(".li").click(function(){
+      mobilenav.classList.remove('open');
+    });
+    
 
    
   });
