@@ -408,6 +408,7 @@ footer .footer-socials{
     margin-bottom: 2rem;
     margin-right: -1rem;
     margin-bottom: 3rem;
+    width:100%;
 }
 footer .copyright{
     color: var(--ternery);
