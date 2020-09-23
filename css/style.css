@@ -437,6 +437,7 @@ height: 6rem;
    
        .b-container{
         flex-wrap: wrap;
+        max-width:100%;
        }
        .s-box{
         flex-grow: 1;
@@ -603,7 +604,7 @@ section.work .card-wrapper{
 
       .hero .left{
           margin-top: -5rem;
-          margin-right: -9rem;
+/*           margin-right: -9rem; */
           padding-bottom: 4rem;
 
       }
