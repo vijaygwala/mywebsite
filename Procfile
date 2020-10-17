@@ -1,0 +1,1 @@
+web: gunicorn vijay_personal_website.wsgi --log-file -
