@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/contact.css' %}">
+    <link rel="stylesheet" href="{% static 'css/work.css' %}">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <!-- =====BOX ICONS===== -->
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <title>Mr vijay</title>
+</head>
+<body>
+   <div class="site-main-wrapper" id="home">
+    <button class="hamberger"> <img src="{% static 'img/hamberger.svg' %}" alt=""></button>
+
+    <div class="mobile-nav">
+        <button class="times"> <img src="{% static 'img/times.svg' %}" alt=""></button>
+        <ul>
+            <li><a class="li" href="#home">Home</a></li>
+            <li><a class="li" href="#services">services</a></li>
+            <li><a class="li" href="#service">Work</a></li>
+            <li><a class="li" href="#about">About</a></li>
+
+        </ul>
+    </div>
+       <header>
+        <div class="container" style="overflow: hidden;">
+        <nav id="main-nav" class="flex justify-between items-center">
+            
+            <div class='left flex items-center'>
+            <div class="branding">
+                <img  style="height:10rem;"src="{% static 'img/logo4.svg' %}" alt="logo">
+            </div>
+            <div class="list">
+                <a href="">Home</a>
+                <a href="#services">services</a>
+                
+                <a href="#service">Work</a>
+                <a href="#about">About</a>
+
+            </div>
+        </div>
+        <div class="right">
+            <a href="#contact-form" style="text-decoration: none;" class="btn btn-primary">Contact</a>
+        </div>
+       
+    
+    
+    </nav>
+    <div class="hero flex items-center justify-between">
+        <div class="left flex-1 flex justify-center">
+            <img src="{% static 'img/irobot8.png' %}" alt="man">
+        </div>
+        <div class="right flex-1">
+           
+            <h1>I'm  FullStack<br><span>Web Developer</span></h1>
+            <p>{{vijay.profile.bio}}</p>
+    
+               <div> <button class="btn btn-secondry"><a href="{{vijay.profile.resume.url}}"> Download CV</a></button></div>
+        </div>
+    </div>
+
+</div>
+    </header>
+    <!-- About us section -->
+    <section id="about"class="about">
+        <div class="container flex items-center about-inner-wrap">
+            <div class="flex-1 left"><img class="about-me-img" src="{{vijay.profile.image.url}}" alt=""></div>
+            <div class="flex-1 right">
+                <h1>About <span>Me</span></h1>
+                <h3>Hello! I'm Vijay Gwala</h3>
+                <p>I am reliable, hard-working with strong attention to
+                    detail and eager to learn about new technologies and
+                    business issues. I am able to work well both on my own
+                    initiative an as part of a team. i can do anything with my
+                    biggest strength of managing time and commitment to
+                    myself</p>
+                   <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=100003999475792"><i class="fab fa-facebook-f"></i></a>
+                       <a href=""><i class="fas fa-comment"></i></a>
+                       <a href="https://www.instagram.com/_vijay_311219/"><i class="fab fa-instagram"></i></a>
+                       <a href="https://www.linkedin.com/in/vijay-gwala-a88522190/"><i class="fab fa-linkedin-in"></i></a>
+                       
+
+
+
+
+                    </div>
+            </div>
+        </div>
+    </section>
+     <!--===== SKILLS =====-->
+     <section class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <div class=" text-center">
+            <h2 class="skills__subtitle">Profesional Skills</h2>
+            <p class="skills__text">I am Continuesly working for enhancing my skills from intermideate to advance</p>
+        </div>
+      
+        <div class="container flex items-center about-inner-wrap">
+            <div class="flex-1 left">
+                <div class="skills__container bd-grid">          
+                    <div>
+                       
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">80%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-bootstrap skills__icon'></i>                               
+                                 <span class="skills__name">Bootstrap</span>
+                            </div>
+                            <div class="skills__bar skills__bs">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT & JQUERY</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img  style="height:1.5rem; width: 1.5rem;margin-right: 0.7rem;"src="{% static 'img/django.svg' %}" alt="man">
+                                <span class="skills__name"> Django</span>
+                            </div>
+                            <div class="skills__bar skills__dj">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                       
+                       
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img style="height:1.5rem; width: 1.5rem; margin-right: 0.7rem;"src="{% static 'img/rest.svg' %}" alt="man">
+                                <span class="skills__name"> Django Rest Framework</span>
+                            </div>
+                            <div class="skills__bar skills__rf">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img  style="height:1.5rem; width: 1.5rem;margin-right: 0.7rem;"src="{% static 'img/scrap.svg' %}" alt="man">
+                                <span class="skills__name"> Web Scrapping</span>
+                            </div>
+                            <div class="skills__bar skills__dj">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img  style="height:3.2rem; width: 3rem;margin-right: 0.7rem;"src="{% static 'img/socketio.svg' %}" alt="man">
+                                <span class="skills__name"> Real Time Applications</span>
+                            </div>
+                            <div class="skills__bar skills__dj">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+            <div class="flex-1 right">              
+                <img src="{% static 'img/work3.jpg' %}" alt="" class="skills__img">
+            </div>
+        </div>
+    </section>
+      <!--services-------------------->
+ <section id="services">
+    <!--heading-------------->
+    <div class="s-heading">
+    <h1>Services</h1>
+    <p>Here Is The Some Servies Which We Provide You.</p>
+    </div>
+    <!--services-box-container--------->
+    <div class="b-container">
+    <!--box-1---------------->
+    <div class="s-box">
+    <!--img------------->
+    <div class="s-b-img">
+     <!--type----------->
+     <div class="s-type">Front-End</div>
+     <!--name------->
+     <img src="{% static 'img/frontend2.png' %}">
+    </div>
+    <!--text----------------->
+    <div class="s-b-text">
+        <p><span id="dots1">HTML, CSS and JavaScript. we will create a web page using basic elements to control layout and style.</span><span id="more1">   Additionally, our web page will support interactivity and full responsiveness. </span></p> 
+        <a  id="s1" onclick="myFunction('s1')">Read More</a>
+        </div>
+    </div>
+     <!--box-2---------------->
+    <div class="s-box">
+    <!--img------------->
+    <div class="s-b-img">
+    <!--type----------->
+     <div class="s-type">Back-End</div>
+     <!--name------->
+     <img src="https://logodix.com/logo/1758802.jpg">
+    </div>
+    <!--text----------------->
+    <div class="s-b-text">
+        <p><span id="dots2">Django is a high-level Python Web framework that encourages rapid development and clean, pragmatic design.</span><span id="more2">  it takes care of much of the hassle of Web development, so you can focus on writing your app without needing to reinvent the wheel. </span></p> 
+        <a  id="s2" onclick="myFunction('s2')">Read More</a>
+          </div>
+    </div>
+     <!--box-3---------------->
+    <div class="s-box">
+    <!--img------------->
+    <div class="s-b-img">
+     <!--type----------->
+     <div class="s-type">Cloud Hosting</div>
+     <!--name------->
+     <img src="https://www.vectorlogo.zone/logos/digitalocean/digitalocean-tile.svg">
+    </div>
+    <!--text----------------->
+    <div class="s-b-text">
+    
+    <p><span id="dots3">Digital Ocean is a cloud-based service or IaaS that offers networking, storage, and virtualization options.</span><span id="more3"> On the other hand, Heroku is PaaS, which refers to software and hardware tools available on the Internet.</span></p> 
+    <a  id="s3" onclick="myFunction('s3')">Read More</a>
+
+</div>
+
+    </div>
+    </div>
+    </section>
+    <script>
+        function myFunction(id) {
+            var dots,moreText,btnText;
+            if(id==='s1'){
+           dots = document.getElementById("dots1");
+           moreText = document.getElementById("more1");
+           btnText = document.getElementById("s1");
+            }
+            if(id==='s2'){
+           dots = document.getElementById("dots2");
+           moreText = document.getElementById("more2");
+           btnText = document.getElementById("s2");
+            }
+            if(id==='s3'){
+           dots = document.getElementById("dots3");
+           moreText = document.getElementById("more3");
+           btnText = document.getElementById("s3");
+            }
+        
+          if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more"; 
+            moreText.style.display = "none";
+          } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less"; 
+            moreText.style.display = "inline";
+          }
+        }
+        </script>
+
+    <!-- freelancers -->
+    <section id="contact-btn">
+    <!--heading-------------->
+    <h1 class="c-b-heading">I am Available for Freelancing </h1>
+    <!--btn-------->
+     <button ><a href="#contact-form">Contact Me</a></button>
+    </section>
+     <!-- Our Work section -->
+     <section id="service"class="services">
+        <div class="container">
+            <h1 class="section-heading"><span>My </span>Work</h1>
+            <p></p>
+            <div class="card-wrapper">
+                {% if projects %}
+                {% for project in projects %}
+                <div class="card">
+                    <i class="fas fa-file-code fa-7x"></i>
+                    <h2>{{project.title}}</h2>
+                    <p>{{project.description}}</p>
+                    <a href="{{ project.link }}" class="stretched-link"></a>
+                </div>
+                {% endfor %}
+                {% else %}
+                <p>No Projects Available</p>
+                {% endif %}
+
+            </div>
+        </div>
+    </section>
+   
+
+  
+<!-- our Team-->
+    <section class="reviews">
+        <div class="container">
+            <h1 class="section-heading"><span>My </span>Team</h1>
+            <p>We provide High standerd clean website for your business solutions </p>
+            <div class="slider">
+                <div class="slide">
+                    <img src="{% static 'img/lady.png' %}"alt="">
+                    <p>Goal-oriented Web Developer brings strong commitment to collaboration and solutions-oriented problem-solving.
+                        Use various packages to develop custom-crafted, customer-focused websites and designs. 
+                       Committed to high standards of user experience, usability and speed. I am able to work well both on my own initiative an as part of a team .
+                       </p>
+                    <span>John Doe ,Company ABC</span>
+                </div>
+               
+            </div>
+            <div class="slider-dots"></div>
+
+        </div>
+    </section>
+    
+    <!-- <section id="work"class="work">
+<div class="container">
+    <h1 class="section-heading"><span>Our </span>Work</h1>
+    <p>We provide high standerd clean website for your business solutions</p>
+    <div class="card-wrapper">
+        <div class="card">
+            <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+            </div>
+            <img src="./img/ph-1.png" alt="">
+        </div>
+        <div class="card">
+            <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+            </div>
+            <img src="./img/ph-1.png" alt="">
+        </div>
+        <div class="card">
+            <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+            </div>
+            <img src="./img/ph-1.png" alt="">
+        </div>
+        <div class="card">
+            <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+            </div>
+            <img src="./img/ph-1.png" alt="">
+        </div>
+        <div class="card">
+            <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+            </div>
+            <img src="./img/ph-1.png" alt="">
+        </div>
+        <div class="card">
+            <div class="overlay">
+                <span>Category</span>
+                <a href="#">Web Development</a>
+            </div>
+            <img src="./img/ph-1.png" alt="">
+        </div>
+    </div>
+</div>
+
+    </section> -->
+   
+    <!-- contact us-->
+
+    <!-- <section id="contact" class="contact">
+        <div class="container">
+            <h1 class="section-heading">Contact <span>Us</span></h1>
+            <p>We provide high standerd clean website for your business solutions</p>
+            <div class="card-wrapper">
+                <div class="card">
+                    <img src="./img/phone-2.svg" alt="">
+                    <h1>Call Us On</h1>
+                    <h6>+7000054532</h6>
+                </div>
+                <div class="card">
+                    <img src="./img/msg.svg" alt="">
+                    <h1>Email Us</h1>
+                    <h6>vijaygwala97@gmail.com</h6>
+                </div>
+                <div class="card">
+                    <img src="./img/map.svg" alt="">
+                    <h1>Visit Office</h1>
+                    <h6>99 S.t Jomblo park pekanbaru</h6>
+                </div>
+            </div>
+            <form action="">
+                <div class="input-wrap">
+                    <input type="text" placeholder="Your Name">
+                    <input type="text"placeholder="Your Email">
+                </div>
+                <div class="input-wrap-2">
+                    <input type="text" placeholder="Your Subject">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                </div>
+                <div class="btn-wrapper"> <button class="btn btn-primary">Send Message</button></div>
+            
+            </form>
+            </div>
+    </section>-->
+    <section id="contact-form">
+        <form action="{% url 'contact'%}" method="POST">
+        <!--left--------------------------------------->
+        {% csrf_token %}
+        <div class="contact-left">
+        <h1 class="c-l-heading"><font style="border-bottom: 3px solid #1ED98B;">Writ</font>e us</h1>
+        <!--name-------->
+        <div class="f-name">
+        <font >Name</font>
+        <input type="text" name="name" placeholder="Full Name"/>
+        </div>
+        <!--email-------->
+        <div class="f-email">
+        <font >Email</font>
+        <input type="email" name="email" placeholder="Example@gmail.com"/>
+        </div>
+        </div>
+        <!--right------------------------------------------->
+        <div class="contact-right">
+        <!--message-------->
+        <div class="message">
+        <font >Message</font>
+        <textarea name="message" rows="5" cols="20" placeholder="Write Message..."></textarea>
+        </div>
+        <!--submit-btn------------>
+        <button>submit</button>
+        </div>
+         
+        </form>
+        {% if contact %}
+        <script>
+        swal('Done !','your message is successfully sent','success')
+        </script>
+        {% endif %}
+        </section>
+    <footer> 
+        <img src="{% static 'img/logo4.png' %}" alt="">
+        <div class="footer-socials">
+            <a href="https://www.facebook.com/profile.php?id=100003999475792"><i class="fab fa-facebook-f fa-2x"></i></a>
+                       <a href=""><i class="fas fa-comment fa-2x"></i></a>
+                       <a href="https://www.instagram.com/_vijay_311219/"><i class="fab fa-instagram fa-2x"></i></a>
+                       <a href="https://www.linkedin.com/in/vijay-gwala-a88522190/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                       
+        </div>
+        <div class="copyright items-center flex justify-center ">
+            <div><i class="fas fa-copyright fa-5x"></i></div>  <div class="cp">Copyright 2020 All right Reserved</div>
+        </div>
+    </footer>
+   </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="{% static 'js/app.js' %}"></script>              
+</body>
+</html>
