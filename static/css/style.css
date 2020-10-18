@@ -380,7 +380,8 @@ line-height: 0.5;
     }
 
     section.reviews .slider .slide span{
-        font-size: 0.8rem;
+        font-size: 1rem;
+    margin-top: 1rem;
     }
     section.reviews .slider-dots .dots{
         list-style-type:None;
@@ -697,8 +698,8 @@ section.work .card-wrapper{
 
  @media only screen and (max-width: 650px) { 
      .about .left .about-me-img{
-    height: 264px;
-    width: 212px;
+        height: 236px;
+        width: 250px;
 }
 
 .hero .left img{
@@ -789,9 +790,7 @@ line-height: 1.2;
     section.about .about-me-img {
         padding: 0 1rem;;
     }
-    section.services .card-wrapper .card h2 {
-        margin-left: 3rem;
-    }
+    
 
     .s-box{
         width: 100%;
