@@ -28,6 +28,8 @@
             <li><a class="li" href="#home">Home</a></li>
             <li><a class="li" href="#services">services</a></li>
             <li><a class="li" href="#service">Work</a></li>
+            <li><a class="li"href="#Team">Team</a></li>
+
             <li><a class="li" href="#about">About</a></li>
 
         </ul>
@@ -45,6 +47,7 @@
                 <a href="#services">services</a>
                 
                 <a href="#service">Work</a>
+                <a href="#Team">Team</a>
                 <a href="#about">About</a>
 
             </div>
@@ -78,12 +81,9 @@
             <div class="flex-1 right">
                 <h1>About <span>Me</span></h1>
                 <h3>Hello! I'm Vijay Gwala</h3>
-                <p>I am reliable, hard-working with strong attention to
+                <p>Highly-dedicated, self-motivated, and enthusiastic Python Programmer.I am reliable, hard-working with strong attention to
                     detail and eager to learn about new technologies and
-                    business issues. I am able to work well both on my own
-                    initiative an as part of a team. i can do anything with my
-                    biggest strength of managing time and commitment to
-                    myself</p>
+                    business issues also Good experience in application and related database development, analyzing user or business requirements as well as software testing, debugging and troubleshooting methods.Possess excellent analytical, problem-solving, decision-making, time-management, team-working and multi-tasking skills.</p>
                    <div class="social">
                     <a href="https://www.facebook.com/profile.php?id=100003999475792"><i class="fab fa-facebook-f"></i></a>
                        <a href=""><i class="fas fa-comment"></i></a>
@@ -172,6 +172,18 @@
                                 <span class="skills__percentage">70%</span>
                             </div>
                         </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <img  style="height:1.5rem; width: 1.5rem;margin-right: 0.7rem;"src="{% static 'img/graphql.png' %}" alt="man">
+                                <span class="skills__name"> GraphQL</span>
+                            </div>
+                            <div class="skills__bar skills__dj">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">70%</span>
+                            </div>
+                        </div>
                        
                        
                         <div class="skills__data">
@@ -214,7 +226,7 @@
                 </div>  
             </div>
             <div class="flex-1 right">              
-                <img src="{% static 'img/work3.jpg' %}" alt="" class="skills__img">
+                <img src="{% static 'img/skilli2.jpg' %}" alt="" class="skills__img">
             </div>
         </div>
     </section>
@@ -234,7 +246,7 @@
      <!--type----------->
      <div class="s-type">Front-End</div>
      <!--name------->
-     <img src="{% static 'img/frontend2.png' %}">
+     <img src="{% static 'img/frontend4.jpg' %}">
     </div>
     <!--text----------------->
     <div class="s-b-text">
@@ -341,11 +353,19 @@
 
   
 <!-- our Team-->
-    <section class="reviews">
+    <section class="reviews" id="Team">
         <div class="container">
             <h1 class="section-heading"><span>My </span>Team</h1>
             <p>We provide High standerd clean website for your business solutions </p>
             <div class="slider">
+                <div class="slide">
+                    <a href="https://nikhil233.github.io/portfolio/"><img src="{% static 'media/Gouri.jpeg' %}"alt=""></a>
+                    <p>A goal oriented , determined and ambitious person with a passion for Web development .
+                        Graduating from College Of Engineering , Bhubaneswar and am happy to be a part of the networking Global world and embracing new goals and lots of learning along the way. I m able to  create visuals with HTML, CSS, JS, BOOTSTRAP and making you interact with my work using PHP AND MYSQL  , Laravel (framework)</p> 
+                        
+                        
+                    <span>L.Gouri Shankar , Odissa</span>
+                </div>
                 <div class="slide">
                     <!-- <img src="{% static 'img/lady.png' %}"alt="">
                     <p>Goal-oriented Web Developer brings strong commitment to collaboration and solutions-oriented problem-solving.
@@ -483,6 +503,11 @@
         {% if contact %}
         <script>
         swal('Done !','your message is successfully sent','success')
+
+        function Go()
+        {
+            window.location.href="https://nikhil233.github.io/portfolio/"
+        }
         </script>
         {% endif %}
         </section>

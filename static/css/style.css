@@ -257,7 +257,8 @@ section.about .social a{
   .skills__img{
     border-radius: .5rem;
     max-width: 100%;
-    height: auto;
+    width: 28rem;
+    height: 44rem;
     display: block;
   }
   
@@ -709,6 +710,14 @@ section.work .card-wrapper{
  
 
  @media (max-width:576px){
+    .skills__img{
+        
+        max-width: 100%;
+        
+        height: 32rem;
+    
+      }
+      
 
     .hero{
         flex-direction: column;
