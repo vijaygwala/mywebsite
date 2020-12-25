@@ -137,3 +137,5 @@ STATIC_URL = '/static/'
 MEDIA_ROOT=os.path.join(BASE_DIR, "media")
 MEDIA_URL='/media/'
 
+#OWM_API_KEY ='6f79b1e11ee2149e4f63526c1e8b41f0'
+OWM_API_KEY = '66ff3434ba88fffc04bf3e1812207117'
