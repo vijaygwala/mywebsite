@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% load static %}
+<style>
+#history-city{
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+}
+nav{
+  background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+}
+</style>
+{% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <a class="navbar-brand" href="#"><i class="fas fa-cloud-sun fa-2x"></i></a>
+
+  <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+      <li class="nav-item ">
+        <a class="nav-link" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="{% url 'history' %}">History</a>
+      </li>
+     
+    </ul>
+    <form class="form-inline my-2 my-lg-0" method="POST"action="{% url 'history' %}">
+      {% csrf_token %}
+      <input class="form-control mr-sm-2" type="datetime-local" name="date" placeholder="Search by date" >
+      <button class="btn btn-light my-2 my-sm-0" type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+    <div id="history-city" class="col-sm-8 col-md-12 col-sm-offset-2">
+    {% if weather_data_list %}
+    {% for weather_data in weather_data_list %}
+        {% include 'components/card.html' %}
+    {% endfor %}
+    {% else %}
+    <div style="width: 100%; text-align: center;  ">
+      <div class="text-center" style="max-width: 450px; margin:0 auto;"><img src="{% static 'no_courses.svg'%}" alt=""></div>
+  </div>  
+    {% endif %}
+  </div>
+{% endblock %}

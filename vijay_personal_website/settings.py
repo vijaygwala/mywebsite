@@ -47,7 +47,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'django.contrib.admin',
-    'portfolio'
+    'portfolio',
+    'dashboard',
+    'youtubeDownloader'
 ]
 
 MIDDLEWARE = [

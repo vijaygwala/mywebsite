@@ -1,0 +1,47 @@
+@media only screen and (min-width: 767px){
+    #sideform{
+        min-height: 100vh;
+    }
+}
+#data td{
+    border: none;
+}
+#upper-data td{
+    padding: 0.50rem;
+}
+
+#sideform{
+    background-image: linear-gradient(to top, #96fbc4 0%, #f9f586 100%);
+
+}
+#dashboard-card{
+    background: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+
+}
+
+#info{
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+
+}
+.btn{
+    background:linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    
+}
+
+.btn, .city-input{
+    border-radius: 20px;
+}
+
+#sideform p{
+    font-size: 1.2rem;
+}
+
+#dashboard-card{
+    background-image: url(weather-cloud.jpg);
+    background-size: cover;
+    background-blend-mode: hard-light;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
